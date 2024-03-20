@@ -1,34 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CONTACT</title>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Gvantsa Uplisashvili</title>
     <style>
-        body { font-family: 'Montserrat', sans-serif; background-color: #e2e8f0; margin: 0; padding: 0; }
-        ul { list-style-type: none; margin: 0; padding: 0; overflow: hidden; background-color: #3a506b; }
-        li { float: left; }
-        li a {
-            display: block;
-            color: #bfc0c0;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
-        li a:hover {
-            background-color: #5b7488;
-            color: #dfe7ed;
-        }
+      body {
+        font-family: "Montserrat", sans-serif;
+        background-color: #e2e8f0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+      }
+      ul.navigation {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #3a506b;
+        position: absolute;
+        width: 100%;
+        top: 0;
+      }
+      ul.navigation li {
+        float: left;
+      }
+      ul.navigation li a {
+        display: block;
+        color: #bfc0c0;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+      }
+      ul.navigation li a:hover {
+        background-color: #5b7488;
+        color: #dfe7ed;
+      }
+      .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        background-color: #ffffff;
+        padding: 20px;
+        margin: 20px auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .contact-info h2 {
+        color: #333;
+      }
+      .social-links {
+        margin-top: 20px;
+      }
+      .social-links a {
+        display: inline-block;
+        margin-right: 10px;
+        text-decoration: none;
+        color: #3a506b;
+        border: 2px solid #3a506b;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+      }
+      .social-links a:hover {
+        background-color: #3a506b;
+        color: white;
+      }
     </style>
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-    <ul>
-        <li class="li-class"><a href="../index.html">HOME</a></li>
-        <li class="li-class"><a href="../pages/cv.html" target="_parent">CV</a></li>
-        <li class="li-class"><a href="../pages/contact.html" target="_parent">CONTACT</a></li>
-        <li class="li-class"><a href="../pages/table.html">TABLE</a></li>
+  </head>
+  <body>
+    <ul class="navigation">
+      <li><a href="../index.html">HOME</a></li>
+      <li><a href="./cv.html">CV</a></li>
+      <li><a href="./contact.html">CONTACT</a></li>
+      <li><a href="./table.html">TABLE</a></li>
     </ul>
-</body>
+    <section class="contact-info">
+      <h2>Contact Me</h2>
+      <div class="social-links">
+        <a
+          href="mailto:gvanca.uplisashvili@gmail.com"
+          class="email-link"
+          target="_blank"
+          >Email</a
+        >
+        <a
+          href="https://www.linkedin.com/in/gvantsa-uplisashvili-57b543253/"
+          class="linkedin-link"
+          target="_blank"
+          >LinkedIn</a
+        >
+        <a
+          href="https://github.com/usarnameMe"
+          class="github-link"
+          target="_blank"
+          >GitHub</a
+        >
+      </div>
+    </section>
+  </body>
 </html>
